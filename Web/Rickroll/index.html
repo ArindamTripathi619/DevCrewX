@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Don't click the button</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #button {
+            background-color: orange;
+            padding: 30px 60px;
+            font-size: 35px;
+            border-radius: 10px;
+            border: 3px dotted rgb(128, 40, 13);
+        }
+
+        #button:hover {
+            background-color: orangered;
+            cursor: pointer;
+        }
+
+        #title {
+            text-align: center;
+            color: rgb(255, 153, 0);
+            animation: blinker 1.0s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .everything {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Modal Styling */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Mobile Styles */
+        @media only screen and (max-width: 600px) {
+            #button {
+                padding: 20px 40px;
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body background="https://media.istockphoto.com/vectors/bloody-grunge-abstract-texture-background-vector-id963342958?k=20&m=963342958&s=612x612&w=0&h=RsbhuLlI9Zs1ZJbYjHot9iFLE61jJAW78a_eKDf2cZ8=">
+<div class="everything">
+    <h1 id="title">
+        <font face="Bradley Hand ITC">Don’t click the button.</font>
+    </h1>
+    <button id="button">
+        <font face="chiller" size="20px" color="FF0F00">Don’t click!!!!</font>
+    </button>
+    <audio controls hidden id="song">
+        <!--<source src="http://docs.google.com/uc?export=open&id=1INNqtSdTf5A4assLQn2sQqUFsOUDGneC" type="audio/mpeg">-->
+        <!--!!!!!CHECK THE PERMISSIONS FROM DRIVE-->
+        <source src="roll.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+<!-- Modal HTML -->
+<div class="modal" id="myModal">
+    <div class="modal-content">
+        <img src="are-you-sure-john-cena.gif" alt="John Cena" style="width: 100%;">
+        <p>Are you sure about that?</p>
+        <button onclick="continueToRickroll()">Yes, I'm sure</button>
+        <button onclick="closeModal()">Cancel</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("button").addEventListener("click", function () {
+        // Display the confirmation modal
+        document.getElementById("myModal").style.display = "flex";
+    });
+
+    function continueToRickroll() {
+        // Change background to dancing rick
+        document.body.style.backgroundImage = "url('https://c.tenor.com/VFFJ8Ei3C2IAAAAM/rickroll-rick.gif')";
+
+        // Hide the heading and the button
+        document.querySelector(".everything").style.display = "none";
+
+        // Play song
+        var song = document.getElementById("song");
+        song.play();
+
+        // Close the modal
+        closeModal();
+    }
+
+    function closeModal() {
+        // Close the modal
+        document.getElementById("myModal").style.display = "none";
+    }
+</script>
+</body>
+</html>
