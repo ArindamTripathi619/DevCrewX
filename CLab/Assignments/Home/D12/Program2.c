@@ -10,29 +10,51 @@ Output: Majority Element: 3
 #include <stdio.h>
 
 int main() {
-    int size, i, count = 0, majority;
+    int n;
+
+    // Input: Size of the array
     printf("Enter the array size: ");
-    scanf("%d", &size);
-    int arr[size];
-    printf("Enter %d elements: ", size);
-    for (i = 0; i < size; i++) {
-        scanf("%d", &arr[i]);
+    scanf("%d", &n);
+
+    int A[n];
+
+    // Input: Elements of the array
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &A[i]);
     }
-    majority = arr[0];
-    for (i = 1; i < size; i++) {
-        if (arr[i] == majority) {
+
+    // Step 1: Find a candidate for majority element
+    int count = 0, candidate = -1;
+    for (int i = 0; i < n; i++) {
+        if (count == 0) {
+            candidate = A[i];
+            count = 1;
+        } else if (A[i] == candidate) {
             count++;
         } else {
             count--;
-            if (count == 0) {
-                majority = arr[i];
-                count = 1;
-            }
         }
     }
-    printf("Majority Element: %d\n", majority);
+
+    // Step 2: Verify if the candidate is a majority element
+    count = 0;
+    for (int i = 0; i < n; i++) {
+        if (A[i] == candidate) {
+            count++;
+        }
+    }
+
+    // Output: Print the majority element or say there is none
+    if (count > n / 2) {
+        printf("Majority Element: %d\n", candidate);
+    } else {
+        printf("No Majority Element found\n");
+    }
+
     return 0;
 }
+
 /*
 OUTPUT:
 Enter the array size: 5
