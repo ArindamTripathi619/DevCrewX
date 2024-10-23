@@ -1,4 +1,5 @@
 /*
+QUESTION:
 WAP to print the following pattern. The number of rows will be inputted from the
 keyboard.
    *
@@ -31,5 +32,9 @@ int main() {
 }
 /*
 OUTPUT:
-
+Enter the number of rows: 4
+   *
+  * *
+ * * *
+* * * *
 */
