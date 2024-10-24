@@ -1,25 +1,28 @@
 /*
-3. WAP to calculate the reverse of a given number.
+QUESTION:
+WAP to calculate the reverse of a given number.
 Input: Enter a number: 125
 Output: Reverse of 125 = 521
 */
+
 #include <stdio.h>
 
 int main() {
-    int n,rev=0,rem;
-    printf("Enter a number : ");
-    scanf("%d",&n);
-    int n2 = n;
-    while (n!=0) {
-        rem = n%10;
-        rev = rev*10+rem;
-        n /= 10;
+    int num, reverse = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while (num != 0) {
+        reverse = reverse * 10 + num % 10;
+        num /= 10;
     }
-    printf("Reverse of %d = %d\n",n2,rev);
+
+    printf("Reverse = %d\n", reverse);
     return 0;
 }
+
 /*
-OUTPUT : 
-Enter a number : 6857
-Reverse of 6857 = 7586
+OUTPUT:
+Enter a number: 125
+Reverse of 125 = 521
 */

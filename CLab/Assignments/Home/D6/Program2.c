@@ -1,41 +1,31 @@
+/*
+QUESTION:
+WAP to display the grade system of KIIT University based on the total marks secured by a student in a semester. Use switch-case statement.
+
+Input: Enter the total mark secured by a student: 77
+Output: Secured grade is A.
+*/
+
 #include <stdio.h>
 
 int main() {
     int marks;
-    char grade;
-
-    // Input: Total marks secured by a student
     printf("Enter the total mark secured by a student: ");
     scanf("%d", &marks);
 
-    // Determine the grade based on marks
     switch (marks / 10) {
         case 10:
-        case 9:
-            grade = 'O';
-            break;
-        case 8:
-            grade = 'E';
-            break;
-        case 7:
-            grade = 'A';
-            break;
-        case 6:
-            grade = 'B';
-            break;
-        case 5:
-            grade = 'C';
-            break;
-        default:
-            grade = 'F';  // Fail grade
+        case 9: printf("Secured grade is O\n"); break;
+        case 8: printf("Secured grade is E\n"); break;
+        case 7: printf("Secured grade is A\n"); break;
+        case 6: printf("Secured grade is B\n"); break;
+        case 5: printf("Secured grade is C\n"); break;
+        default: printf("Secured grade is F\n");
     }
-
-    // Output the result
-    printf("Secured grade is %c\n", grade);
 
     return 0;
 }
 /*
-    Enter the total mark secured by a student: 91
-    Secured grade is O
+OUTPUT:
+Secured grade is A.
 */
