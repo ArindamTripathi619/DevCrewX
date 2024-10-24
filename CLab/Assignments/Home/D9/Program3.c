@@ -1,20 +1,36 @@
 /*
-WAP to print numbers between 10 to 1000 where the digits of the numbers are//-
-equal. (e.g. 22, 33, 111, 555 or 999)
-Output: 11 22 33 44 . . . 111 222 ...999
+QUESTION:
+WAP to print numbers between 10 to 1000 where the digits of the numbers are equal.
 */
+
 #include <stdio.h>
 
 int main() {
-    int i;
-    printf("Numbers between 10 and 1000 where the digits are equal:\n");
-    for (i = 11; i <= 999; i++) {
-        int digit1 = i / 100;
-        int digit2 = (i % 100) / 10;
-        int digit3 = i % 10;
-        if (digit1 == digit2 && digit2 == digit3) {
+    printf("Numbers with equal digits between 10 to 1000:\n");
+    
+    for (int i = 10; i <= 1000; i++) {
+        int num = i, first_digit = num % 10;
+        int all_equal = 1;
+        
+        while (num > 0) {
+            if (num % 10 != first_digit) {
+                all_equal = 0;
+                break;
+            }
+            num /= 10;
+        }
+        
+        if (all_equal) {
             printf("%d ", i);
         }
     }
+    
+    printf("\n");
     return 0;
 }
+
+/*
+OUTPUT:
+Numbers with equal digits between 10 to 1000:
+11 22 33 44 55 66 77 88 99 111 222 333 444 555 666 777 888 999
+*/

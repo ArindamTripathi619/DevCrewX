@@ -1,28 +1,34 @@
 /*
-WAP to convert a binary number into its equivalent decimal number.
-Input: Enter a Binary Number: 101010
-Output: Decimal equivalent of Binary Number 101010 = 42
+QUESTION:
+WAP to convert a binary number into its equivalent decimal number. The user has to input a binary number, and the program outputs its decimal equivalent.
 */
 
 #include <stdio.h>
 #include <math.h>
 
 int main() {
-    printf("Enter a Binary Number:");
-    int binaryNum, decimalNum = 0, i = 0, remainder,temp;
-    scanf("%d", &binaryNum);
-    temp = binaryNum;
-    while (binaryNum != 0) {
-        remainder = binaryNum % 10;
-
-        decimalNum += remainder * pow(2, i);
-        binaryNum /= 10;
+    int binary, decimal = 0, i = 0;
+    
+    // Input the binary number
+    printf("Enter a Binary Number: ");
+    scanf("%d", &binary);
+    
+    // Convert binary to decimal
+    while (binary > 0) {
+        int last_digit = binary % 10;
+        decimal += last_digit * pow(2, i);
+        binary /= 10;
         i++;
     }
-    printf("Decimal equivalent of Binary Number %d = %d\n", temp, decimalNum);
+    
+    // Display the decimal equivalent
+    printf("Decimal equivalent of Binary Number = %d\n", decimal);
+    
     return 0;
 }
+
 /*
 OUTPUT:
-
+Enter a Binary Number: 101010
+Decimal equivalent of Binary Number 101010 = 42
 */
