@@ -85,4 +85,5 @@ Enter the elements of matrix 2:
 0 0 4
 5 7 0
 The matrices can be compared but are not equal.
+hello
 */
