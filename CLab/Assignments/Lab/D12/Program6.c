@@ -1,6 +1,6 @@
 /*
 QUESTION:
-WAP to merge the contents of two sorted arrays and store them into a third array.
+WAP to merge the contents of two sorted arrays and store them into a third sorted array.
 
 Input: Enter the first array size: 5
 Enter 5 elements of the first array: 3 6 11 18 25

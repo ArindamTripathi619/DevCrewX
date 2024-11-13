@@ -6,6 +6,7 @@ Output: 2 to the power 5 divided by 5! = 0.2666
 */
 
 #include <stdio.h>
+#include <math.h>
 
 int factorial(int n) {
     int fact = 1;
