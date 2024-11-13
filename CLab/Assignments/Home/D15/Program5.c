@@ -1,18 +1,4 @@
 /*
-
-*/
-
-#include <stdio.h>
-
-int main() {
-    
-    return 0;
-}
-/*
-OUTPUT:
-
-*/
-/*
 QUESTION:
 WAP to calculate GCD/HCF of two numbers using an iterative function.
 */
