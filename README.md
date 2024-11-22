@@ -138,6 +138,7 @@ This repository is a testament to our collaborative spirit and shared passion fo
   - 📷 [Instagram](https://www.instagram.com/aritri619/)  
   - 🌐 [Facebook](https://www.facebook.com/arindam.tripathi.180)  
   - 📧 [Email](arindamtripathi2005@gmail.com)
+  - ✖️ [Twitter](https://twitter.com/ArindamTripat11)
 
 Feel free to reach out if you have any suggestions or questions! ✉️  
 
