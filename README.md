@@ -1,7 +1,10 @@
+
+---
+
 # 🌟 **DevCrewX** 🌟  
 *Playground for pals of mine from A23 KIIT @2k24*  
 
-Welcome to **DevCrewX**! 🎓 This repository is a collaborative hub for the curious minds of **A23 KIIT @2k24**. Whether you’re tackling **C Lab Assignments**, diving into **Java-based DSA problems**, or exploring additional programming resources, you’re in the right place!  
+Welcome to **DevCrewX**! 🎓 This repository is a collaborative hub for the curious minds of **A23 Section of KIIT @2k24**. Whether you’re tackling **C Lab Assignments**, diving into **Java-based DSA problems**, or exploring additional programming resources, you’re in the right place!  
 
 ---
 
@@ -71,7 +74,7 @@ Follow these steps to use the repository:
 
 ### **Clone the Repository**  
 ```bash  
-git clone https://github.com/yourusername/DevCrewX.git  
+git clone https://github.com/ArindamTripathi619/DevCrewX.git  
 cd DevCrewX  
 ```  
 
@@ -114,7 +117,29 @@ Let’s grow together as a community! 🚀
 
 ## 🎉 **Acknowledgments**  
 
-A big shoutout to my friends from **A23 KIIT @2k24** for their encouragement and contributions! 🙌 This repository is a testament to our collaborative spirit and shared passion for learning.  
+A big shoutout to my amazing friends for their support and encouragement:  
+- **Anitra Boral**  
+- **Aratrika Das**  
+- **Arnab Pal**  
+- **Atul Tejaswi**  
+- **Akshay Pratap Singh**  
+- **Boiri Sai Kiran**  
+
+This repository is a testament to our collaborative spirit and shared passion for learning. 🙌  
+
+---
+
+## 👨‍💻 **Author**  
+
+👋 Hi! I'm **Arindam Tripathi**, the creator and maintainer of **DevCrewX**.  
+- 🎓 Student of **A23 Section (CSE with AIML Branch) of First Year from KIIT University 2024**.  
+- 💻 Passionate about **coding**, **DSA**, and **collaborative learning**.  
+- 🌐 Connect with me:  
+  - 📷 [Instagram](https://www.instagram.com/aritri619/)  
+  - 🌐 [Facebook](https://www.facebook.com/arindam.tripathi.180)  
+  - 📧 [Email](arindamtripathi2005@gmail.com)
+
+Feel free to reach out if you have any suggestions or questions! ✉️  
 
 ---
 
@@ -128,5 +153,4 @@ This repository is intended for educational use only. Please adhere to your inst
 
 Feel free to drop suggestions or raise issues in the **Issues** section! Happy coding! 🚀✨  
 
----
-
+---  
