@@ -2,22 +2,29 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"type": "shell",
+			"label": "Create bin folder",
+			"command": "mkdir",
+			"args": ["-p", "${workspaceFolder}/bin"],
+			"problemMatcher": []
+		},
+		{
 			"type": "cppbuild",
 			"label": "C/C++: gcc build active file",
+			"dependsOrder": "sequence",
+			"dependsOn": "Create bin folder",
 			"command": "/usr/bin/gcc",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
 				"${file}",
 				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}.out"
+				"${workspaceFolder}/bin/${fileBasenameNoExtension}.out"
 			],
 			"options": {
-				"cwd": "${fileDirname}"
+				"cwd": "${workspaceFolder}"
 			},
-			"problemMatcher": [
-				"$gcc"
-			],
+			"problemMatcher": ["$gcc"],
 			"group": {
 				"kind": "build",
 				"isDefault": true
