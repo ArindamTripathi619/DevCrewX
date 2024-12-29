@@ -59,9 +59,9 @@ public class PostfixStackEvaluator {
         for (int i = 0; i < n; i++) {
             char c = exp.charAt(i);
 
-            if (Character.isDigit(c)) {
+            if (Character.isDigit(c)||c == '.') {
                 // Collect digits to form a multi-digit number
-                while (i < n && Character.isDigit(exp.charAt(i))) {
+                while (i < n && (Character.isDigit(exp.charAt(i)) || exp.charAt(i) == '.')) {
                     temp += exp.charAt(i);
                     i++;
                 }
